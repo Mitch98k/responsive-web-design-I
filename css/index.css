@@ -136,30 +136,43 @@ nav{
 	.headerImg{
 		display: none;
 	}
-	.logo{
-		margin-bottom: 7%;
-		margin-right: 5%;
-	} 
 	nav{
-		display: block;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
 	}
 	a{
-		margin-right: 3%;
-		margin-left: 3%;
+		order: 1;
+		margin: 0% 3% 0% 3%;
+	}
+	.logo{
+		width: 150px;
+		margin-left: 40%;
+		margin-right: 30%;
+		margin-bottom: 3%;
 	}
 	.topSectionClass div{
-		margin-left: 20%;
-		margin-right: 0%;
+		display: flex;
+		align-items: center;
 	}
 }
 @media (max-width: 500px){
 	nav{
-		display: flex;
-		flex-direction: column-reverse;
+		flex-direction: column;
 	}
 	.logo{
-		width: 40%;
-		margin-left: 30%;
+		margin-left: 35%;
 	}
-	
-}
+	a{
+		margin-top: 3%;
+		margin-bottom: 3%;
+		padding-top: 0%;
+		padding-bottom: 5%;
+		border-bottom: 1px solid grey;
+	}
+	.div1{
+		display: flex;
+		flex-direction: column;
+		margin: 0% 15% 0% 15%;
+	}
+	}
